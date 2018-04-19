@@ -1,0 +1,66 @@
+
+
+.main {
+	
+	margin-top: 50px;
+}
+
+h1 {
+	color: #595959;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+p {
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+	width: 40%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 50px;
+}
+
+.main img {
+	display: block;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.links {
+	display: block;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.links img {
+	display: inline-block;
+	height: 30px;
+}
+.btn {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.soso {
+	color: white;
+	background-color: #ffe6ff;
+	font-size: 24px;
+	font-weight: bold;
+	width: 500px;
+}
+.greenbox {
+	background-color: lightgreen;
+	height: 100px;
+	width: 100px;
+}
