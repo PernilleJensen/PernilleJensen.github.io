@@ -1,66 +1,205 @@
 
-
-.main {
-	
-	margin-top: 50px;
+.colorBlock0 img {
+	width: 100%;
 }
 
-h1 {
-	color: #595959;
-	font-family: 'Rajdhani', sans-serif;
-	font-weight: 300;
+.panel {
+	display: flex;
+	align-items: stretch;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.panel > div {
+  	width: 15vw;
+  	text-align: center;
+}
+
+.nav {
+	flex-grow: 1;
+	box-shadow: 5px 5px 15px grey;
+}
+
+.pernilleJensen {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin-left: 10%;
+	text-align: left;
+}
+
+.nav a {
+	font-family: 'IM Fell Double Pica', serif;
+	text-decoration: none;
+	color: #83a770;
+}
+
+a:hover {
+	color: #c8d8aa;
+}
+
+.hiMouse img {
+	margin-left: 15%;
+	margin-top: 0;
+	width: 80%;
+}
+
+.image_off, .hiMouse:hover .image_on{
+   display: none;
+}
+
+.image_on, .hiMouse:hover .image_off{
+   display: block;
+}
+
+.carouselSlide {
+	flex-grow: 8;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.rightPanel {
+	flex-grow: 1;
+	box-shadow: -5px 5px 15px grey;
+}
+
+.rightPanel img {
+	margin-top: 30%;
+	height: 60%;
+}
+
+.colorBlock1 {
+	height: 300px;
+	background-color: white;
+	margin-top: 20px;
+	opacity: 1;
+}
+
+.mice {
+	display: block;
+	
+	margin-top: 30px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
+.mice img {
+	display: inline-block;
+	
+	width: 18%;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+
+
+.about {
+	background-image: url("Images/FlowerBackground2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	text-align: center;
+}
+
+.photo {
+	display: inline-block;
+	height: 150px;
+	margin-top: 12%;
+}
 
 p {
 	font-family: 'Rajdhani', sans-serif;
-	font-weight: 300;
-	text-align: justify;
-	width: 40%;
 	margin-left: auto;
 	margin-right:auto;
-	margin-top: 50px;
 }
 
-.main img {
-	display: block;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
+.about p {
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.3);
 	margin-top: 50px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+	padding: 10px;
+	box-shadow: 5px 5px 15px grey;
+	border: 3px solid white;
+	text-align: justify;
+}
+
+.about p span {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.contact {
+	background-image: url("Images/PernilleJensen-GraphicWork9.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	text-align: center;
+}
+
+.contact p {
+	/*font-family: 'IM Fell Double Pica', serif;*/
+	color: black;
+	font-weight: 600;
+	text-align: center;
+	font-size: 1.5em;
+	opacity: 0.5;
+	margin-top: 25px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid white;
 }
 
 .links {
-	display: block;
-	width: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
+	display: inline-block;
+	width: 30%;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	box-shadow: 5px 5px 15px grey;
+	margin-top: 25%;
+	border: 3px solid white;
 }
 
 .links img {
 	display: inline-block;
-	height: 30px;
+	height: 40px;
+	opacity: none;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	opacity: 1.0;
 }
-.btn {
-  display: block;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 1px solid red;
+
+.links img:hover {
+	opacity: 0.5;
 }
-.soso {
-	color: white;
-	background-color: #ffe6ff;
-	font-size: 24px;
-	font-weight: bold;
-	width: 500px;
+
+.links a {
+	text-decoration: none;
 }
-.greenbox {
-	background-color: lightgreen;
-	height: 100px;
-	width: 100px;
+
+footer {
+	left: 0;
+    bottom: 0;
+    width: 100%;   
+}
+
+footer p {
+	text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+	.pernilleJensen {
+		font-size: 1em;
+	}
+
+	.nav ul {
+		font-size: 0.7em;
+	}
 }

@@ -1,31 +1,109 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="style.css">
 	<head>
 		<title>Pernille Jensen</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Image in tab -->
 		<link rel="icon" href="IMG_0583.png" sizes="16x16" type="image/png">
-		<link href="https://fonts.googleapis.com/css?family=Rajdhani:300, 400" rel="stylesheet">
-
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani:300, 400, 500, 600, 700 |IM+Fell+Double+Pica" rel="stylesheet">
 	</head>
+
 	<body>
-		<div class="main">
-			<h1>Pernille Jensen</h1>
-			<img src="IMG_0583.jpg" alt="Pernille Jensen"/>
-			<p>Hi, I'm a Berlin based developer and engineer. I hold a master's degree in architectural engineering from the Technical University of Denmark. After three years of working as a fire safety engineer in Copenhagen, I'm now spending some time in Berlin learning to code.</p>
+		<div class="panel">
+			<!--Navigation-->
+			<div class="nav">
+				<a class="pernilleJensen" href="/">Pernille Jensen</a>
+  			<ul>
+    			<li>
+        		<a class="page-scroll" href="#about">About</a>
+      		</li>
+      		<li>
+        		<a class="page-scroll" href="#contact">Contact</a>
+      		</li>
+       	</ul>
+	  		<a class="hiMouse">
+	  			<img class="image_on" src="Images/HiMouse1.jpg" alt="Waving Mouse" />
+	  			<img class="image_off" src="Images/HiMouseHiHello1.jpg" alt="Mouse says Hi! Hello!" />
+	  		</a>
+			</div>
+			
+			<!--Slider-->
+			<div id="carouselGraphicWork" class="carouselSlide" data-ride="carousel">
+				<div class="carousel-inner">
+			   	<div class="carousel-item active">
+		   			<img class="d-block w-100" src="Images/PernilleJensen-GraphicWork-slider1.jpg" alt="First slide">
+		   		</div>
+		   		<div class="carousel-item">
+		   			<img class="d-block w-100" src="Images/PernilleJensen-GraphicWork-slider2.jpg" alt="Second slide">
+		   		</div>
+		   		<div class="carousel-item">
+		   			<img class="d-block w-100" src="Images/PernilleJensen-GraphicWork-slider3.jpg" alt="Third slide">
+		   		</div>
+				</div>
+			</div>
+			
+			<div class="rightPanel">
+				<img src="Images/Mariassengehalm.jpg"/>
+			</div>
 		</div>
-		<div class="links">
-			<a href="https://dk.linkedin.com/in/pernille-jensen-88a4159" target="_blank">
-				<img src="icon-watercolor-linkedin.png" alt="linkedin icon">
-			</a>
-			<a href="https://github.com/PernilleJensen" target="_blank">
-				<img src="icon-watercolor-github.png" alt="github icon">
-			</a>
-			<a href="mailto:pernille@pernillejensen.com?Subject=Hello%20again" target="_top">
-				<img src="icon-watercolor-mail.png" alt="mail icon">
-			</a>
-			<a href="https://www.instagram.com/sharklein/" target="_blank">
-				<img src="icon-watercolor-instagram.png" alt="instagram icon">
-			</a>
+
+
+
+		<div class="colorBlock1">
+			<div class="mice">
+				<img src="Images/Mouse1.png"/>
+				<img src="Images/Mouse2.png"/>
+				<img src="Images/Mouse3.png"/>
+			</div>
 		</div>
+
+		<section id="about">
+			<div class="about">
+				<img src="Images/Photo.jpg" alt="Pernille Jensen" class="photo"/>
+				<p><span>Hi! Hello!</span><br/>I'm a Berlin based developer and engineer. I hold a master's degree in architectural engineering from the Technical University of Denmark. After three years of working as a fire safety engineer in Copenhagen, I'm now spending some time in Berlin learning to code.<br/>I have built this site to practice coding, and since I also love to draw, I figured my illustrations could make up the content.</p>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="contact">
+				<div class="links">
+					<p>C O N N E C T :</p>
+					<a href="https://dk.linkedin.com/in/pernille-jensen-88a4159" target="_blank">
+						<img src="Images/icon-watercolor-linkedin.png" alt="linkedin icon">
+					</a>
+					<a href="https://github.com/PernilleJensen" target="_blank">
+						<img src="Images/icon-watercolor-github.png" alt="github icon">
+					</a>
+					<a href="mailto:pernille@pernillejensen.com?Subject=Hello%20again" target="_top">
+						<img src="Images/icon-watercolor-mail.png" alt="mail icon">
+					</a>
+					<a href="https://www.instagram.com/sharklein/" target="_blank">
+						<img src="Images/icon-watercolor-instagram.png" alt="instagram icon">
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<p>Copyright &copy; <script type="text/javascript">
+				var d = new Date()
+				document.write(d.getFullYear())
+			</script> Pernille Jensen</p>
+		</footer>
+
+		<!-- Optional JavaScript -->
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="myScript.js"></script>
 	</body>
 </html>
