@@ -99,12 +99,12 @@ h2 {
 	height: 100%;
 }
 
-.partyMice {
+.miceOnARow {
 	display: block;
 	text-align: center;
 }
 
-.partyMice img {
+.miceOnARow img {
 	width: 70vw;
 	display: inline-block;
 	border-bottom: 50px solid #fadeef;
@@ -270,5 +270,98 @@ footer p {
 
 	.nav ul {
 		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.nav {
+		z-index: 2;
+		top: 10vh;
+	}
+
+	.nav a {
+		padding-left: 10px;
+		font-size: 1.1rem;
+	}
+
+	.nav span {
+		display: none;
+	}
+
+	.panel {
+		margin-bottom: 20px;
+	}
+
+	#drawings {
+		margin-top: 0;
+	}
+
+	.drawings {
+		display: none;
+	}
+
+	.leftScreen, .rightScreen {
+		display: none;
+	}
+	
+	.miceOnARow img {
+		width: 90vw;
+		border-bottom: 25px solid #fadeef; 
+	}
+
+	.mice {
+		margin: 15px 0;
+	}
+	.mice img {
+		width: 30vw;
+		padding: 5px;
+	}
+
+	.colorBlock1 {
+		width: 90vw;
+		height: 25px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.hiMouse {
+		display: none;
+	}
+
+	.photo {
+		width: 100px;
+		padding-top: 20px;
+	}
+
+	.aboutText {
+		width: 90vw;
+	}
+
+	.about h3 {
+		font-size: 1.3em;
+	}
+
+	.contactBlock {
+		width: 90vw;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.photo {
+		padding-top: 5vh;
+	}
+
+	.aboutText {
+		margin-top: 10px;
+	}
+
+	.about h3 {
+		font-size: 1em;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.about p {
+		font-size: 0.9em;
 	}
 }
