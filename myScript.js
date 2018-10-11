@@ -43,3 +43,28 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+//Scroll Reveal
+window.sr = ScrollReveal({reset: false });
+
+
+//Custom Settings
+sr.reveal('.mice', {
+    duration: 1000
+});
+
+sr.reveal('.colorBlock1', {
+    duration: 1000
+});
+
+sr.reveal('.photo', {
+    duration: 2000
+});
+
+sr.reveal('aboutText', {
+    duration: 1000
+})
+
+sr.reveal('.contactBlock', {
+    duration: 1000
+});
