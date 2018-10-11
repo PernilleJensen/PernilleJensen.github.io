@@ -16,24 +16,36 @@
 	</head>
 
 	<body>
-		<h1>Pernille Jensen</h1>
-		<h2>CODE & ILLUSTRATIONS</h2>
-		<div class="panel">
-			<!--Navigation-->
-			<div class="nav">
-				<!--<a class="pernilleJensen" href="/">Pernille Jensen</a>-->
-  			<ul>
+		<header id="header">
+			<h1>Pernille Jensen</h1>
+			<h2>CODE & ILLUSTRATIONS</h2>
+		</header>
+
+		<!--Navigation-->
+		<div class="nav">
+			<ul id="top-menu">
+				<li class="active">
+					<a class="page-scroll" href="#header">Top</a>
+				</li>
+				<li>
+					<a class="page-scroll" href="#drawings">Drawings</a>
+				</li>
     			<li>
-        		<a class="page-scroll" href="#about">About</a>
-      		</li>
-      		<li>
-        		<a class="page-scroll" href="#contact">Contact</a>
-      		</li>
-       	</ul>
-	  		<a class="hiMouse">
+        			<a class="page-scroll" href="#about">About</a>
+      			</li>
+      			<li>
+        			<a class="page-scroll" href="#contact">Contact</a>
+      			</li>
+       		</ul>
+	  		<!--<a class="hiMouse">
 	  			<img class="image_on" src="Images/HiMouse1.jpg" alt="Waving Mouse" />
 	  			<img class="image_off" src="Images/HiMouseHiHello1.jpg" alt="Mouse says Hi! Hello!" />
-	  		</a>
+			</a>-->
+		</div>
+
+		<div class="panel">
+			<div class="leftScreen">
+				<img src="Images/screen1Mirrored.jpg"/>  
 			</div>
 			
 			<!--Slider-->
@@ -56,31 +68,56 @@
 				</div>
 			</div>
 			
-			<div class="rightPanel">
-				<img src="Images/Mariassengehalm.jpg"/>
+			<div class="rightScreen">
+				<img src="Images/screen1.jpg"/>
 			</div>
 		</div>
+		<section id="drawings">
+			<div class="partyMice">
+				<img src="Images/RowofMice.png"/>
+			</div>
 
-
-
-		<div class="colorBlock1">
 			<div class="mice">
 				<img src="Images/Mouse1.png"/>
 				<img src="Images/Mouse2.png"/>
 				<img src="Images/Mouse3.png"/>
 			</div>
-		</div>
+
+			<div class="colorBlock1"></div>
+			
+			<div class="panel">
+				<div class="leftScreen">
+					<img src="Images/screen1Mirrored.jpg"/>  
+				</div>
+				<div class="drawings">
+					<div>
+						
+						<img src="Images/PernilleJensen-GraphicWork7.jpg"/>
+						
+					</div>
+				</div>
+				<div class="rightScreen">
+					<img src="Images/screen1.jpg"/>
+				</div>
+			</div>
+
+			
+		</section>
 
 		<section id="about">
 			<div class="about">
 				<img src="Images/Photo.jpg" alt="Pernille Jensen" class="photo"/>
-				<p><span>Hi! Hello!</span><br/>I'm a Berlin based developer and engineer. I hold a master's degree in architectural engineering from the Technical University of Denmark. After three years of working as a fire safety engineer in Copenhagen, I'm now spending some time in Berlin learning to code.<br/>I have built this site to practice coding, and since I also love to draw, I figured my illustrations could make up the content.</p>
+				<div class="aboutText">
+					<h3>Hi! Hello!</h3>
+					<p>I'm a Berlin based developer and engineer. I hold a master's degree in architectural engineering from the Technical University of Denmark. After three years of working as a fire safety engineer in Copenhagen, I'm now spending some time in Berlin learning to code.<br/>I have built this site to practice coding, and since I also love to draw, I figured my illustrations could make up the content.
+					</p>
+				</div>
 			</div>
 		</section>
 
 		<section id="contact">
 			<div class="contact">
-				<div class="links">
+				<div class="contactBlock">
 					<p>C O N N E C T :</p>
 					<a href="https://dk.linkedin.com/in/pernille-jensen-88a4159" target="_blank">
 						<img src="Images/icon-watercolor-linkedin.png" alt="linkedin icon">

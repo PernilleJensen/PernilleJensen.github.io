@@ -3,63 +3,76 @@ h1 {
 	font-family: 'IM Fell Double Pica', serif;
 	color: #83a770;
 	text-align: center;
-	padding-top: 50px;
-	font-size: 3.5em;
+	padding-top: 3vh;
+	font-size: 2.3em;
+	font-weight: 400;
 }
 
 h2 {
 	font-family: 'IM Fell Double Pica', serif;
 	color: #83a770;
 	text-align: center;
-	padding-top: 20px;
-	font-size: 1.3em;
+	padding-top: 0;
+	font-size: 1em;
+}
+
+.nav {
+	display: inline-block;
+	position: fixed;
+	left: 0;
+	top: 25vh;
+}
+
+.nav ul {
+	list-style-type: none;
+	line-height: 2.5em;
+	text-align: left;
+	padding-top: 20%;
+	padding-left: 0;
+}
+
+.nav a {
+	font-family: 'IM Fell Double Pica', serif;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #83a770;
+	background-color: #fadeef;
+	padding: 0 5px 0 40px;
+}
+
+a:hover {
+	color: #c8d8aa;
+	border-right: 3px solid white;
+}
+
+#top-menu li.active a {
+    color: #c8d8aa;
+	border-right: 3px solid white;
 }
 
 .panel {
 	display: flex;
 	align-items: stretch;
-	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-top: 3vh;
+	margin-bottom: 5vh;
 }
 
-.panel > div {
+/*.panel > div {
   	width: 15vw;
   	text-align: center;
-}
+}*/
 
-.nav {
+.leftScreen {
 	flex-grow: 1;
-	box-shadow: 5px 5px 15px #868180
-	;
+	box-shadow: 5px 5px 15px #868180;
 }
 
-.pernilleJensen {
-	width: 100%;
-	font-size: 1.5em;
-	text-align: left;
-	margin-left: 20%;
-	margin-top: 5%;
+.leftScreen img {
+	width: 20vw;
+	height: 100%;
 }
 
-.nav ul {
-	list-style-type: none;
-	margin-left: 15%;
-	text-align: left;
-	padding-top: 20%;
-}
-
-.nav a {
-	font-family: 'IM Fell Double Pica', serif;
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #83a770;
-}
-
-a:hover {
-	color: #c8d8aa;
-}
-
-.hiMouse img {
+/*.hiMouse img {
 	margin-left: 15%;
 	margin-top: 0;
 	width: 80%;
@@ -71,12 +84,13 @@ a:hover {
 
 .image_on, .hiMouse:hover .image_off{
    display: block;
-}
+}*/
 
 .carouselSlide {
 	flex-grow: 8;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
 }
 
 .carousel-indicators li {
@@ -89,26 +103,33 @@ a:hover {
 	margin-bottom: 0.1rem;
 }
 
-.rightPanel {
+.rightScreen {
 	flex-grow: 1;
 	box-shadow: -5px 5px 15px #868180;
 }
 
-.rightPanel img {
-	margin-top: 30%;
-	height: 60%;
+.rightScreen img {
+	width: 20vw;
+	height: 100%;
 }
 
-.colorBlock1 {
-	height: 300px;
-	background-color: white;
-	margin-top: 20px;
-	opacity: 1;
+.partyMice {
+	display: block;
+	text-align: center;
+}
+
+.partyMice img {
+	width: 70vw;
+	display: inline-block;
+	border-bottom: 50px solid #fadeef;
+}
+
+#drawings {
+	margin-top: 50px;
 }
 
 .mice {
 	display: block;
-	
 	margin-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -116,9 +137,29 @@ a:hover {
 
 .mice img {
 	display: inline-block;
-	width: 18%;
+	width: 25%;
 	border-radius: 50%;
 	padding: 20px;
+}
+
+.colorBlock1 {
+	width: 70vw;
+	height: 50px;
+	background-color: #fadeef;
+	margin: 50px auto;
+	box-shadow: 0 5px 15px #868180;
+}
+
+
+.drawings {
+	flex-grow: 4;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.drawings img {
+	width: 100%;
 }
 
 .about {
@@ -130,32 +171,37 @@ a:hover {
 }
 
 .photo {
-	display: inline-block;
-	height: 150px;
-	margin-top: 12vh;
+	display: block;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15vh;
 }
 
-p {
-	font-family: 'Rajdhani', sans-serif;
-	margin-left: auto;
-	margin-right:auto;
+.aboutText {
+	display: inline-block;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 10px;
+	box-shadow: 5px 5px 15px #868180;
+	border: 3px solid white;
+	font-family: 'IM Fell Double Pica', serif;
+	margin-top: 50px;
+}
+
+.about h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+	color: rgba(131, 167, 112, 1);
+	margin-top: 25px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid white;
 }
 
 .about p {
-	font-family: 'IM Fell Double Pica', serif;
-	width: 35%;
-	background-color: rgba(255, 255, 255, 0.5);
-	margin-top: 50px;
 	color: rgba(91, 116, 78, 1);
-	font-weight: 600;
-	padding: 20px;
-	box-shadow: 5px 5px 15px #868180;
-	border: 3px solid white;
 	text-align: justify;
-}
-
-.about p span {
-	font-size: 1.5em;
+	padding: 0 20px;
 }
 
 .contact {
@@ -165,6 +211,16 @@ p {
 	height: 100vh;
 	background-size: cover;
 	text-align: center;
+}
+
+.contactBlock {
+	display: inline-block;
+	width: 30%;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	box-shadow: 5px 5px 15px #868180;
+	margin-top: 30vh;
+	border: 3px solid white;
 }
 
 .contact p {
@@ -178,17 +234,7 @@ p {
 	border-bottom: 3px solid white;
 }
 
-.links {
-	display: inline-block;
-	width: 30%;
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 10px;
-	box-shadow: 5px 5px 15px #868180;
-	margin-top: 30vh;
-	border: 3px solid white;
-}
-
-.links img {
+.contactBlock img {
 	display: inline-block;
 	height: 40px;
 	opacity: none;
@@ -197,11 +243,11 @@ p {
 	opacity: 1.0;
 }
 
-.links img:hover {
+.contactBlock img:hover {
 	opacity: 0.5;
 }
 
-.links a {
+.contactBlock a {
 	text-decoration: none;
 }
 
@@ -213,6 +259,7 @@ footer {
 
 footer p {
 	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
 }
 
 @media only screen and (max-width: 1050px) {
