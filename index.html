@@ -28,7 +28,7 @@
 					<a class="page-scroll" href="#header">Top</a>
 				</li>
 				<li>
-					<span><a class="page-scroll" href="#drawings">Drawings</a></span>
+					<a class="page-scroll minusMobile" href="#drawings">Drawings</a>
 				</li>
     			<li>
         			<a class="page-scroll" href="#about">About</a>
@@ -69,34 +69,59 @@
 				<img src="Images/screen1.jpg"/>
 			</div>
 		</div>
+
+		<div class="miceOnARow">
+			<img src="Images/RowofMice.png"/>
+		</div>
+
 		<section id="drawings">
-			<div class="miceOnARow">
-				<img src="Images/RowofMice.png"/>
-			</div>
-
-			<div class="mice">
-				<img src="Images/Mouse1.png"/>
-				<img src="Images/Mouse2.png"/>
-				<img src="Images/Mouse3.png"/>
-			</div>
-
-			<div class="colorBlock1"></div>
-			
-			<div class="panel">
-				<div class="leftScreen">
-					<img src="Images/screen1Mirrored.jpg"/>  
+			<div class="row">
+				<div class="column">
+					<img src="Images/Mouse2.png" onclick="openModal();currentSlide(1)"/>
 				</div>
-				<div class="drawings">
-					<div>
-						
-						<img src="Images/PernilleJensen-GraphicWork7.jpg"/>
-						
+				<div class="column">
+					<img src="Images/Mouse5.png" onclick="openModal();currentSlide(2)"/>
+				</div>
+				<div class="column">
+					<img src="Images/Mouse3.png" onclick="openModal();currentSlide(3)"/>
+				</div>
+				<div class="column">
+					<img src="Images/Mouse4.png" onclick="openModal();currentSlide(4)"/>
+				</div>
+				<div class="column">
+					<img src="Images/Mouse6.png" onclick="openModal();currentSlide(5)"/>
+				</div>
+				<div class="column">
+					<img src="Images/Frogs.png" onclick="openModal();currentSlide(6)"/>
+				</div>
+			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork5.jpg"/>
 					</div>
-				</div>
-				<div class="rightScreen">
-					<img src="Images/screen1.jpg"/>
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork3.jpg"/>
+					</div>
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork7.jpg"/>
+					</div>
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork4.png"/>
+					</div>
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork6.jpg"/>
+					</div>
+					<div class="mySlides">
+						<img src="Images/PernilleJensen-GraphicWork8.jpg"/>
+					</div>
+				
 				</div>
 			</div>
+						
 		</section>
 
 		<section id="about">

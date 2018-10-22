@@ -49,22 +49,55 @@ window.sr = ScrollReveal({reset: false });
 
 
 //Custom Settings
-sr.reveal('.mice', {
-    duration: 1000
-});
-
-sr.reveal('.colorBlock1', {
-    duration: 1000
+sr.reveal('.row', {
+    duration: 1500,
+    scale: 1.2
 });
 
 sr.reveal('.photo', {
     duration: 2000
 });
 
-sr.reveal('aboutText', {
-    duration: 1000
+sr.reveal('.aboutText', {
+    duration: 1500
 })
 
 sr.reveal('.contactBlock', {
-    duration: 1000
+    duration: 1500
 });
+
+//Modal Gallery
+function openModal() {
+    document.getElementById('myModal').style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
