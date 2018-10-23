@@ -80,7 +80,6 @@ h2 {
 }
 
 .rightScreen {
-	
 	box-shadow: -5px 5px 15px #868180;
 }
 
@@ -143,7 +142,7 @@ h2 {
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	padding-top: 10vh;
 	left: 0;
 	top: 0;
@@ -279,7 +278,6 @@ h2 {
 .contactBlock img {
 	display: inline-block;
 	height: 40px;
-	opacity: none;
 	margin-bottom: 25px;
 	margin-top: 20px;
 	opacity: 1.0;
@@ -307,28 +305,89 @@ footer p {
 }
 
 @media only screen and (max-width: 1050px) {
-	.pernilleJensen {
-		font-size: 1em;
-	}
-
 	.nav ul {
 		font-size: 0.7em;
 	}
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 770px) {
 	.nav {
 		z-index: 2;
 		top: 10vh;
 	}
 
 	.nav a {
-		padding-left: 10px;
-		font-size: 1.1rem;
+		padding-left: 15px;
 	}
 
 	.minusMobile {
 		display: none;
+	}
+
+	.carousel-indicators {
+		z-index: 2;
+	}
+	
+	.miceOnARow img {
+		width: 90vw;
+	}
+
+	#drawings {
+		height: 50vh;
+	}
+
+	.row {
+		width: 75vw;
+		margin: 15px auto;
+		border-top: none;
+	}
+
+	.modal {
+		padding-top: 20vh;
+	}
+
+	.close {
+		top: 15vh;
+		opacity: 0.8;
+	}
+
+	.modal-content {
+		width: 80vw;
+		height: 30%;
+	}
+
+	.mySlides img {
+		width: 80vw;
+	}
+
+	.photo {
+		width: 120px;
+		padding-top: 5vh;
+	}
+	
+	.aboutText {
+		width: 70vw;
+	}
+	
+	.about h3 {
+		font-size: 1.5em;
+	}
+
+	.hiMouse img {
+		width: 40vw;
+		margin: 60vh 0 0 50vw;
+		position: absolute;
+	}
+
+	.contactBlock {
+		width: 50vw;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.nav a {
+		padding-left: 10px;
+		font-size: 1.1rem;
 	}
 
 	.carouselSlide {
@@ -339,32 +398,32 @@ footer p {
 		margin-bottom: 20px;
 	}
 
-	#drawings {
-		margin-top: 0;
-	}
-
 	.leftScreen, .rightScreen {
 		display: none;
 	}
 	
 	.miceOnARow img {
-		width: 90vw;
 		border-bottom: 25px solid #fadeef; 
 	}
 
-	.mice {
-		margin: 15px 0;
-	}
-	.mice img {
-		width: 30vw;
-		padding: 5px;
+	#drawings {
+		height: 40vh;
 	}
 
-	.colorBlock1 {
-		width: 90vw;
-		height: 25px;
-		margin-top: 0;
-		margin-bottom: 0;
+	.row {
+		width: 90vw;	
+	}
+		
+	.row > .column {
+		padding: 10px 5px;
+	}
+
+	.modal {
+		padding-top: 25vh;
+	}
+
+	.close {
+		top: 15vh;
 	}
 
 	.hiMouse {
@@ -373,11 +432,12 @@ footer p {
 
 	.photo {
 		width: 100px;
-		padding-top: 20px;
+		padding-top: 50px;
 	}
 
 	.aboutText {
 		width: 90vw;
+		margin-top: 20px;
 	}
 
 	.about h3 {
@@ -406,5 +466,189 @@ footer p {
 
 	.about p {
 		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 0.7rem;
+	}
+
+	.nav {
+		top: 15vh;
+	}
+
+	.nav a {
+		padding-left: 10px;
+	}
+
+	.minusMobile {
+		display: inline;
+	}
+
+	.panel {
+		width: 70vw;
+		height: 45vh;
+		margin: 0 auto;
+	}
+
+	.leftScreen {
+		box-shadow: 5px 5px 5px #ada6a5;
+	}
+
+	.leftScreen img, .rightScreen img {
+		width: 15vw;
+	}
+
+	.carouselSlide {
+		margin: 5px;
+	}
+
+	.rightScreen {
+		box-shadow: -5px 5px 5px #ada6a5;
+	}
+
+	.miceOnARow {
+		margin-top: 7px;
+	}
+
+	.miceOnARow img {
+		width: 75vw;
+		border-bottom: 25px solid #fadeef;
+	}
+
+	#drawings {
+		height: 100vh;
+	}
+
+	.row {
+		width: 65vw;
+		height: 100vh;
+	}
+
+	.row > .column {
+		padding: 20px 20px;
+	}
+
+	.column {
+		width: 33%;
+	}
+
+	.modal {
+		padding-top: 4vh;
+	}
+
+	.close {
+		top: 0;
+	}
+
+	.modal-content {
+		width: 40vw;
+		height: 30%;
+	}
+
+	.mySlides img {
+		width: 40vw;
+	}
+
+	.hiMouse {
+		display: none;
+	}
+
+	.photo {
+		width: 80px;
+		padding-top: 30px;
+	}
+
+	.aboutText {
+		width: 90vw;
+		margin-top: 10px;
+		padding: 5px;
+	}
+
+	.about h3 {
+		font-size: 1.3em;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.contactBlock {
+		margin-top: 20vh;
+	}
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+	.panel {
+		width: 100vw;
+		height: auto;
+	}
+
+	.leftScreen img, .rightScreen img {
+		width: 20vw;
+	}
+
+	.row {
+		width: 70vw;
+	}
+
+	.row > .column {
+		padding: 10px 10px;
+	}
+
+	.modal-content {
+		width: 50vw;
+		height: 30%;
+	}
+
+	.mySlides img {
+		width: 50vw;
+	}
+
+	.aboutText {
+		width: 80vw;
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 0.5rem;
+	}
+
+	.nav a {
+		font-size: 0.7rem;
+	}
+
+	.photo {
+		padding-top: 15px;
+	}
+
+	.aboutText {
+		width: 90vw;
+	}
+
+	.about h3 {
+		font-size: 1rem;
+	}
+	.aboutText p {
+		font-size: 0.8rem;
+	}
+
+	.contact p {
+		font-size: 1.2em;
+		margin-top: 15px;
+		padding-bottom: 10px;
+	}
+
+	.contactBlock img {
+		height: 30px;
+		margin-bottom: 15px;
+		margin-top: 10px;
 	}
 }
