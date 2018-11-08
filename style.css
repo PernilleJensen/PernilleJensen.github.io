@@ -320,24 +320,20 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1024px) {
 	.nav {
 		z-index: 2;
 		top: 10vh;
-	}
-
-	.nav a {
-		padding-left: 15px;
-	}
-
-	.minusMobile {
-		display: none;
 	}
 
 	.carousel-indicators {
 		z-index: 2;
 	}
 
+	.minusMobile {
+		display: none;
+	}
+	
 	#drawings {
 		height: auto;
 	}
@@ -361,12 +357,50 @@ footer p {
 	}
 
 	.photo {
+		width: 150px;
+	}
+
+	.aboutText {
+		width: 60vw;
+		margin-top: 10vh;
+	}
+	
+	.about h3 {
+		font-size: 2em;
+	}
+
+	.about p {
+		font-size: 1.5em;
+	}
+
+	.hiMouse img {
+		width: 40vw;
+		margin: 70vh 0 0 50vw;
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.nav a {
+		padding-left: 15px;
+	}
+
+	.modal {
+		padding-top: 15vh;
+	}
+
+	.close {
+		top: 10vh;
+	}	
+
+	.photo {
 		width: 120px;
-		padding-top: 5vh;
+		padding-top: 10vh;
 	}
 	
 	.aboutText {
 		width: 70vw;
+		margin-top: 5vh;
 	}
 	
 	.about h3 {
@@ -375,7 +409,7 @@ footer p {
 
 	.hiMouse img {
 		width: 40vw;
-		margin: 60vh 0 0 50vw;
+		margin: 70vh 0 0 50vw;
 		position: absolute;
 	}
 
@@ -407,7 +441,7 @@ footer p {
 	}
 
 	#drawings {
-		height: 40vh;
+		height: auto;
 	}
 
 	.row {
@@ -432,16 +466,20 @@ footer p {
 
 	.photo {
 		width: 25%;
-		padding-top: 50px;
+		padding-top: 25px;
 	}
 
 	.aboutText {
-		width: 90vw;
-		margin-top: 20px;
+		width: 80vw;
+		margin-top: 40px;
 	}
 
 	.about h3 {
 		font-size: 1.3em;
+	}
+
+	.about p {
+		font-size: 1em;
 	}
 
 	.contactBlock {
@@ -467,6 +505,45 @@ footer p {
 	.about p {
 		font-size: 0.9em;
 	}
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	.close {
+		top: 0;
+	}
+	
+	.modal {
+		padding-top: 15vh;
+	}
+
+	.modal-content {
+		width: 50vw;
+		height: 30%;
+	}
+
+	.mySlides img {
+		width: 50vw;
+	}
+	
+	.hiMouse {
+		display: none;
+	}
+
+	.photo {
+		width: 130px;
+	}
+
+	.aboutText {
+		width: 65vw;
+		margin-top: 20px;
+	}
+
+	.about h3 {
+		
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+	
 }
 
 @media only screen and (max-width: 823px) and (orientation: landscape) {
@@ -542,13 +619,8 @@ footer p {
 		padding-top: 4vh;
 	}
 
-	.close {
-		top: 0;
-	}
-
 	.modal-content {
 		width: 40vw;
-		height: 30%;
 	}
 
 	.mySlides img {
@@ -567,13 +639,17 @@ footer p {
 	.aboutText {
 		width: 85vw;
 		margin-top: 10px;
-		padding: 20px;
+		padding: 10px;
 	}
 
 	.about h3 {
 		font-size: 1.3em;
 		margin-top: 10px;
 		padding-bottom: 10px;
+	}
+
+	.about p {
+		font-size: 1em;
 	}
 
 	.contactBlock {
