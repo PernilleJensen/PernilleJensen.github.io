@@ -195,6 +195,7 @@ h2 {
 	background-repeat: no-repeat;
 	height: 100vh;
 	text-align: center;
+	background-size: cover;
 }
 
 .hiMouse img {
